@@ -1,0 +1,36 @@
+class
+button
+
+.but - creates a basic button
+.but-elegant - adds box-shadow to the button and creates a black background
+.but-drop - changes background when focused
+.but-fancy - creates moving borders on the button and borders become inactive when a button is clicked
+
+badges
+.nbadge - creates a badge
+.c-rotate - rotates a badge clockwise (c- clockwise)
+.a-rotate - rotates a badge anti-clockwise (a- anti clockwise)
+.b-a-rotate - break and rotate on innerupdate and apply .jbut on the button for number increament
+
+//js
+
+<label>Choose an ice cream flavor:
+  <select class="ice-cream" name="ice-cream">
+    <option value="">Select One …</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="sardine">Sardine</option>
+    <option value="vanilla">Vanilla</option>
+  </select>
+</label>
+
+<div class="result"></div>
+
+
+const selectElement = document.querySelector('.ice-cream');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('.result');
+  result.textContent = `You like ${event.target.value}`;
+});
+
+//js

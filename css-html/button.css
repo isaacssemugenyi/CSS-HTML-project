@@ -1,0 +1,106 @@
+
+/* buttons
+glowing buttons, border moving buttons, boxshadow buttons, moving background button
+, badges
+rotating badges, glowing badges, glowing badges on hover*/
+*{margin: 0; padding: 0; box-sizing: border-box; }
+div { width: 100hw; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+/*================================================================================================================*/
+.but {font-size: 1.5rem; width: auto; padding: 5px 10px; border-radius: 15%; height: 45px ; border: 0; outline:0;}
+.but::-moz-focus-inner { border: 0;}
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*elegant button*/
+.but-elegant { background: rgba(18, 18, 18, .8); border: none; color: white; }
+.but-elegant:hover { background: rgba(18, 18, 18, 1); box-shadow: 4px 4px 1px rgba(100, 100, 100, .2); }
+.but-elegant:focus { background: rgba(18, 18, 18, 1); outline: 0; box-shadow: 4px 4px 1px rgba(100, 100, 100, .6),-2px -2px 1px rgba(100, 100, 100, .6); }
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*drop background button, but-drop button*/
+.but-drop { color: white; background: rgba(255, 100, 255, 1); border: none; }
+.but-drop:hover { border: none; box-shadow: 4px 4px 1px rgba(100, 100, 100, .6),-2px -2px 1px rgba(100, 100, 100, .6);}
+.but-drop:focus { border: none; box-shadow: 4px 4px 1px rgba(100, 100, 100, .6),-2px -2px 1px rgba(100, 100, 100, .6); -webkit-animation: drop 1s linear infinite; -moz-animation: drop 1s linear infinite; -ms-animation: drop 1s linear infinite; -o-animation: drop 1s linear infinite; animation: drop 1s linear infinite; }
+@keyframes drop { 0% { background: rgba(255, 100, 255, 1); } 50% { background: blue;} 100% { background: red;} }
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*button background dropping from top to bottom*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*button background dropping from bottom to top*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*button background dropping from left to right*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*button background dropping from right to left*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*button text color changing*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*glowing outside button*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*glowing text button*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*background gradient button*/
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*Fancy button*/
+.but-fancy {/*border moving*/}
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*Badge*/
+.nbadge {  width: 20px; height: 20px; padding:10px; border-radius: 50%; background: rgba(18, 18, 18,1); color: white; position: relative; box-shadow: 1px 1px 2px black, -1px -1px 2px blue; }
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*badge rotate clockwise*/
+.c-rotate { -webkit-animation: c-turning 1s linear infinite; -moz-animation: c-turning 1s linear infinite; -ms-animation: c-turning 1s linear infinite; -o-animation: c-turning 1s linear infinite; animation: c-turning 1s linear infinite; }
+ /* Safari and Chrome */
+@-webkit-keyframes c-turning { 0% { -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes c-turning { 0% { -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } 100% { -ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } }
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*badge rotate anti-clockwise*/
+.a-rotate { -webkit-animation: a-turning 1s linear infinite; -moz-animation: a-turning 1s linear infinite; -ms-animation: a-turning 1s linear infinite; -o-animation: a-turning 1s linear infinite; animation: a-turning 1s linear infinite; }
+/* badge anti-clockwise*/
+@-webkit-keyframes a-turning { 0% { -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } 100% { -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } }
+@keyframes a-turning { 0% { -ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } 100% { -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } }
+/*================================================================================================================*/
+
+/*================================================================================================================*/
+/*badge rotate anti-clockwise*/
+.b-a-rotate { -webkit-animation: a-turning 1s linear 1; -moz-animation: a-turning 1s linear 1; -ms-animation: a-turning 1s linear 1; -o-animation: a-turning 1s linear 1; animation: a-turning 1s linear 1; }
+/* badge anti-clockwise*/
+@-webkit-keyframes a-turning { 0% { -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } 100% { -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } }
+@keyframes a-turning { 0% { -ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg); } 100% { -ms-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); } }
+/*================================================================================================================*/
+
+/*Glowing badge*/
+
+
+@keyframes nodeInserted { 
+ from { opacity: 0.99; }
+ to { opacity: 1; } 
+}
+
+#container-element * {
+ animation-duration: 0.001s;
+ animation-name: nodeInserted;
+}
